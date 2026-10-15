@@ -13,10 +13,10 @@ api_token = ""
 
 # Uncomment to skip the upstream freshness report at the end of each sync run.
 # This avoids unauthenticated GitHub API calls (60 req/hr limit) — useful for CI.
-# show_freshness = false
+show_freshness = false
 
 # Set to true to preview changes without modifying anything.
-dry_run = false
+dry_run = true
 
 # Uncomment to override the fallback mirror base URL.
 # Default: https://hagezi-mirror.dnsbunker.org/controld
@@ -25,7 +25,7 @@ dry_run = false
 
 [profiles]
 # Exact names of your ControlD profiles (case-sensitive).
-names = ["Tesla", "Kids", "Friends", "Adults"]
+names = ["Default", "Mobile"]
 
 # =============================================================================
 # FOLDER DEFINITIONS
@@ -35,11 +35,16 @@ names = ["Tesla", "Kids", "Friends", "Adults"]
 # =============================================================================
 
 [folders]
-"Badware Hoster"         = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/badware-hoster-folder.json"
-"Most Abused TLDs"       = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-combined-folder.json"
-"No Safesearch Support"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/nosafesearch-folder.json"
-"Referral Allow" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/referral-allow-folder.json"
-"META Tracker Allow"     = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/meta-tracker-allow-folder.json"
+"Amazon Native Trackers (Block)"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-amazon-folder.json"
+"Microsoft Native Trackers (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-microsoft-folder.json"
+"Microsoft Native Trackers (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/microsoft-allow-folder.json"
+"Samsung Native Trackers (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-samsung-folder.json"
+"TikTok Aggressive (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-tiktok-aggressive-folder.json"
+"Referral (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/referral-allow-folder.json"
+"Spam IDNs (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-idns-folder.json"
+"Spam TLDs (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-allow-folder.json"
+"Known Issues (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/ultimate-known_issues-allow-folder.json"
+
 
 # =============================================================================
 # PROFILE → FOLDER MAPPINGS
@@ -49,22 +54,22 @@ names = ["Tesla", "Kids", "Friends", "Adults"]
 # =============================================================================
 
 [profile_folders]
-Tesla   = ["Badware Hoster", "Most Abused TLDs"]
-Kids    = [
-  "Badware Hoster",
-  "Most Abused TLDs",
-  "No Safesearch Support",
-  "Referral Allow"
+Default = [
+  "Amazon Native Trackers (Block)",
+  "Microsoft Trackers (Block)",
+  "Microsoft Trackers (Allow)",
+  "TikTok Aggressive (Block)",
+  "Referral (Allow)",
+  "Spam IDNs (Block)",
+  "Spam TLDs (Allow)", 
+  "Known Issues (Allow)"
 ]
-Friends = [
-  "Badware Hoster",
-  "Most Abused TLDs",
-  "Referral Allow",
-  "META Tracker Allow"
-]
-Adults  = [
-  "Badware Hoster",
-  "Most Abused TLDs",
-  "Referral Allow",
-  "META Tracker Allow"
+Mobile = [
+  "Amazon Native Trackers (Block)",
+  "Samsung Native Trackers (Block)",
+  "TikTok Aggressive (Block)",
+  "Referral (Allow)",
+  "Spam IDNs (Block)",
+  "Spam TLDs (Allow)", 
+  "Known Issues (Allow)"
 ]
