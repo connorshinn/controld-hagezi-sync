@@ -56,8 +56,8 @@ names = ["Default", "Mobile"]
 [profile_folders]
 Default = [
   "Amazon Native Trackers (Block)",
-  "Microsoft Trackers (Block)",
-  "Microsoft Trackers (Allow)",
+  "Microsoft Native Trackers (Block)",
+  "Microsoft Native Trackers (Allow)",
   "TikTok Aggressive (Block)",
   "Referral (Allow)",
   "Spam IDNs (Block)",
