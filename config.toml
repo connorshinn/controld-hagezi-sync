@@ -35,15 +35,15 @@ names = ["Default", "Mobile"]
 # =============================================================================
 
 [folders]
-"Amazon Native Trackers (Block)"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-amazon-folder.json"
-"Microsoft Native Trackers (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-microsoft-folder.json"
-"Microsoft Native Trackers (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/microsoft-allow-folder.json"
-"Samsung Native Trackers (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-samsung-folder.json"
-"TikTok Aggressive (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-tiktok-aggressive-folder.json"
-"Referral (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/referral-allow-folder.json"
-"Spam IDNs (Block)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-idns-folder.json"
-"Spam TLDs (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-allow-folder.json"
-"Known Issues (Allow)" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/ultimate-known_issues-allow-folder.json"
+"Amazon Native Trackers"  = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-amazon-folder.json"
+"Microsoft Native Trackers" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-microsoft-folder.json"
+"Microsoft Native Trackers" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/microsoft-allow-folder.json"
+"Samsung Native Trackers" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-samsung-folder.json"
+"TikTok Aggressive" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/native-tracker-tiktok-aggressive-folder.json"
+"Referral" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/referral-allow-folder.json"
+"Spam IDNs" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-idns-folder.json"
+"Spam TLDs" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/spam-tlds-allow-folder.json"
+"Known Issues" = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/controld/ultimate-known_issues-allow-folder.json"
 
 
 # =============================================================================
@@ -55,21 +55,21 @@ names = ["Default", "Mobile"]
 
 [profile_folders]
 Default = [
-  "Amazon Native Trackers (Block)",
-  "Microsoft Native Trackers (Block)",
-  "Microsoft Native Trackers (Allow)",
-  "TikTok Aggressive (Block)",
-  "Referral (Allow)",
-  "Spam IDNs (Block)",
-  "Spam TLDs (Allow)", 
-  "Known Issues (Allow)"
+  "Amazon Native Trackers",
+  "Microsoft Native Trackers",
+  "Microsoft Native Trackers",
+  "TikTok Aggressive",
+  "Referral",
+  "Spam IDNs",
+  "Spam TLDs", 
+  "Known Issues"
 ]
 Mobile = [
-  "Amazon Native Trackers (Block)",
-  "Samsung Native Trackers (Block)",
-  "TikTok Aggressive (Block)",
-  "Referral (Allow)",
-  "Spam IDNs (Block)",
-  "Spam TLDs (Allow)", 
-  "Known Issues (Allow)"
+  "Amazon Native Trackers",
+  "Samsung Native Trackers",
+  "TikTok Aggressive",
+  "Referral",
+  "Spam IDNs",
+  "Spam TLDs", 
+  "Known Issues"
 ]
